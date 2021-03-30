@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+.slide_wrapper {
+    position: relative;
+    width: 960px; /* 300*3 + 30*2 */
+    margin: 0 auto;
+    height: 300px;
+    overflow: hidden;
+}
+.slides {
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* width: 2610px; */ /* 300*8 + 30*7 */
+    transition: left 0.5s ease-out;
+}
+.slides li:not(:last-child) {
+    float: left;
+    margin-right: 30px;
+} /* :not(:last-child) 마지막은 적용 X */
+.controls {
+    text-align: center;
+    margin-top: 50px;
+}
+.controls span {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
